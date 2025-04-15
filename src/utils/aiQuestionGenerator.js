@@ -2,15 +2,17 @@ import axios from 'axios';
 
 const LOCAL_PROXY_URL = 'http://localhost:5000/api/generate-questions';
 
-export const generateQuestions = async (markdownContent, questionCount, difficulty) => {
+export const generateQuestions = async (markdownContent, questionCount, difficulty, category) => {
   console.log('Debug: markdownContent:', markdownContent);
   console.log('Debug: questionCount:', questionCount);
   console.log('Debug: difficulty:', difficulty);
+  console.log('Debug: category:', category);
 
   return axios.post(LOCAL_PROXY_URL, {
     content: markdownContent,
     questionCount: questionCount,
     difficulty: difficulty,
+    category: category,
   }).then((response) => {
     console.log('Debug: Raw response:', response.data.questions);
 

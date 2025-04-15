@@ -166,3 +166,29 @@ button:hover {
   padding: 2px 4px;
   border-radius: 3px;
 }
+
+/* 確保 html 和 body 高度為 100% */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 設置 App 為 flex 容器，並填滿高度 */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* 主要內容區域佔據剩餘空間 */
+.App > *:not(footer) {
+  flex: 1;
+}
+
+/* Footer 樣式 */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 16px;
+}
