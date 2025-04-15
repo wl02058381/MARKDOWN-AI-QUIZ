@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.question-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.question-item {
+  margin: 10px 0;
+}
+
+.answer-feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.answer-checker {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.answer-checker h2 {
+  text-align: center;
+  color: #333;
+}
+
+.result-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.result-item.correct {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.result-item.incorrect {
+  border-color: #f44336;
+  background-color: #ffebee;
+}
+
+.result-item h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.result-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feedback.correct {
+  color: #4caf50;
+}
+
+.feedback.incorrect {
+  color: #f44336;
+}
+
+/* QuizGenerator styles */
+.quiz-generator {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.settings {
+  margin-bottom: 20px;
+}
+
+.settings label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.questions {
+  margin-top: 20px;
+}
+
+.question-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.choices {
+  margin-top: 10px;
+}
+
+.choice {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* MarkdownImporter styles */
+.markdown-importer {
+  margin: 20px;
+}
+
+.markdown-preview {
+  padding: 20px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.markdown-preview pre {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.markdown-preview code {
+  background-color: #1e1e1e;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
