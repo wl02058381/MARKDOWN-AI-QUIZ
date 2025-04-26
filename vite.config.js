@@ -13,7 +13,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['#minpath', '#minproc', '#minurl'],
+      external: ['#minpath', '#minproc', '#minurl','node:url', 'node:path'],
       output: {
         paths: {
           '#minpath': '/MARKDOWN-AI-QUIZ/assets/minpath.js',
