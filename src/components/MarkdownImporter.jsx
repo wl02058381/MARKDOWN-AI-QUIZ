@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm'; // 引入 remark-gfm 插件
-import 'github-markdown-css';
+// import 'github-markdown-css'; //暫時隱藏 test會有錯誤
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';

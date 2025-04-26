@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import MarkdownImporter from './components/MarkdownImporter';
 import QuizGenerator from './components/QuizGenerator';
