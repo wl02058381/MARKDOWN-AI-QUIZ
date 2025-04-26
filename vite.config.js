@@ -11,5 +11,12 @@ export default defineConfig({
     rollupOptions: {
       external: ['#minurl','#minpath','#minproc'], // 確保外部依賴
     },
+    resolve: {
+      alias: {
+        '#minpath': '/src/utils/empty-module.js', // 指向一個空模組
+        '#minproc': '/src/utils/empty-module.js', // 指向一個空模組
+        '#minurl': '/src/utils/empty-module.js',  // 指向一個空模組
+      },
+    },
   }
 });
